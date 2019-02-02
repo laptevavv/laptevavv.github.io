@@ -17,9 +17,7 @@ body {
     margin: 0;
 }
 
-h1 {
-    margin: 0;
-}
+button:focus {outline:0;}
 
 .container-main{
     background: black;
@@ -39,10 +37,10 @@ h1 {
 
 .content-containter{
     height: 100%;
-    padding-top: 22vh;
-    padding-left: 10vh;
+    padding-top: 28vh;
+    padding-left: 10vw;
     padding-right: 10vh;
-    padding-bottom: 10vh;
+    padding-bottom: 10vw;
 }
 
 .hello {
@@ -62,23 +60,28 @@ h1 {
     margin-bottom: 4vh;
 }
 
+.work {
+    background-image: url('./images/arrow.png');
+    background-repeat: no-repeat;
+    background-position-x: 366px;
+    background-position-y: center;
+}
+
 .buttons-container{
     text-align: left;
 }
 
-a.nostyle:link {
-    text-decoration: inherit;
-    color: inherit;
-    cursor: auto;
-}
-
-a.nostyle:visited {
-    text-decoration: inherit;
-    color: inherit;
-    cursor: auto;
+.portfolio {
+    width: 30px;
+    height: 20px;
+    margin-left: 16px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
 }
 
 .button {
+    cursor: pointer;
     width: 207px;
     height: 59px;
     border-radius: 4px;
@@ -98,15 +101,24 @@ a.nostyle:visited {
     background-image: url('./images/mail.png');
     color: black;
 }
+.mail:hover {
+    background-color: #ffeb00;
+}
 .vk {
     background-color: #FF0956;
     background-image: url('./images/vk.png');
-    color: black;
+    color: white;
+}
+.vk:hover {
+    background-color: #ee004b;
 }
 .inst {
     background-color: #1CA5CC;
     background-image: url('./images/inst.png');
-    color: black;
+    color: white;
+}
+.inst:hover {
+    background-color: #0591b9;
 }
 
 @media (max-width: 415px) {
