@@ -47,6 +47,11 @@ button:focus {outline:0;}
     display: none;
 }
 
+
+a {
+    text-decoration: inherit;
+}
+
 .hello {
     text-align: left;
     font-size: 58px;
