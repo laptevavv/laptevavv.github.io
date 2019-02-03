@@ -43,6 +43,10 @@ button:focus {outline:0;}
     padding-bottom: 10vw;
 }
 
+.mobile-photo, .mobile-content {
+    display: none;
+}
+
 .hello {
     text-align: left;
     font-size: 58px;
@@ -102,7 +106,7 @@ button:focus {outline:0;}
     color: black;
 }
 .mail:hover {
-    background-color: #ffeb00;
+    background-color: #d3bc0f;
 }
 .vk {
     background-color: #FF0956;
@@ -110,7 +114,7 @@ button:focus {outline:0;}
     color: white;
 }
 .vk:hover {
-    background-color: #ee004b;
+    background-color: #c8114a;
 }
 .inst {
     background-color: #1CA5CC;
@@ -118,24 +122,167 @@ button:focus {outline:0;}
     color: white;
 }
 .inst:hover {
-    background-color: #0591b9;
+    background-color: #0087ae;
+}
+
+.mobile, .tablet {
+    display: none;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.tablet {
+    width: 166px;
+    height: 56px;
+}
+
+
+@media (max-width: 1200px) {
+    .container-main{
+        background-image: url('./images/2.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-attachment: fixed;
+        overflow: visible;
+        height: unset;
+        /*font-size:30px;*/
+    }
+
+    .content-containter{
+        padding-top: 30vh;
+        height: -webkit-fill-available;
+        /*padding-left: 0px;*/
+    }
+
+    .hello {
+        font-size: 46px;
+        margin-bottom: 2vh;
+    }
+
+    .content, .work {
+        font-size: 16px;
+        margin-bottom: 2vh;
+    }
+    .work {
+        background-position-x: 310px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-main{
+        background-image: url('./images/2.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-attachment: fixed;
+        /*overflow: visible;*/
+        /*height: unset;*/
+        /*font-size:30px;*/
+    }
+
+    .content-containter{
+        height: 100%;
+        padding-top: 38vh;
+        padding-left: 2vw;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: unset;
+    }
+    .work {
+        background-position-x: 310px;
+    }
+}
+/*@media (max-height: 1024px) {*/
+    /*.content-containter{*/
+        /*height: 100%;*/
+        /*padding-top: 34vh;*/
+        /*!*padding-left: 6vw;*!*/
+    /*}*/
+/*}*/
+
+@media (max-width: 800px) {
+    .content-containter{
+        /*height: 100%;*/
+        padding-top: 48vh;
+        padding-left: 6vw;
+    }
+    .hello {
+        line-height: 52px;
+    }
+    .work {
+        background-position-x: 310px;
+    }
 }
 
 @media (max-width: 415px) {
     .container-main{
-        background-image: url('./images/3.png');
-        background-repeat: no-repeat;
-        background-position: top;
-        background-attachment: fixed;
+        background: black;
         overflow: visible;
         height: unset;
         font-size:30px;
     }
 
     .content-containter{
-        height: 100%;
-        padding-top: 0px;
-        padding-left: 0px;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .hello {
+        font-size: 30px;
+        max-width: 290px;
+        line-height: 38px;
+    }
+    .content, .work {
+        font-size: 14px;
+        max-width: 290px;
+    }
+
+    .mobile {
+        display: unset;
+        width: 290px;
+        padding-left: 64px;
+        background-position-x: 206px;
+        margin-bottom: 12px;
+    }
+    .mobile-photo {
+        display: inherit;
+        width: 100%;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-image: url('./images/3.png');
+        background-position: top;
+    }
+
+    .hello, .work, .content, .buttons-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .portfolio {
+        width: 16px;
+        padding: 0px;
+
+    }
+    .work {
+        height: 32px;
+        background-position-x: 262px;
+    }
+    .buttons-container {
+        width: 290px;
+    }
+    .desktop-content {
+        display: none;
+    }
+    .mobile-content {
+        display: inherit;
     }
 }
 
