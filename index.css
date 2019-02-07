@@ -37,7 +37,7 @@ button:focus {outline:0;}
 
 .content-containter{
     height: 100%;
-    padding-top: 28vh;
+    padding-top: 25vh;
     padding-left: 10vw;
     padding-right: 10vh;
     padding-bottom: 10vw;
@@ -291,3 +291,10 @@ a {
     }
 }
 
+.portfolio-link {
+    text-decoration: none;
+    color: white;
+}
+.portfolio-link:hover {
+    text-decoration: underline;
+}
